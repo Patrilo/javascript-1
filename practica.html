@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="om">
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso Básico HTML5</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="file.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="header-title">Hola mundo</h1>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-link""><a class="nav-item" onClick="changeTitle(1)" href="#" id="pepe">Menu item 1</a></li>
+          <li class="nav-link""><a class="nav-item" onClick="changeTitle(2)" href="#">Menu item 2</a></li>
+          <li class="nav-link""><a class="nav-item" onClick="changeTitle(3)" href="#">Menu item 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main>
+      <section class="content">
+        <article>
+          <h2 class="content-title" id="title-news">Mi Noticia</h2>
+          <p class="content-info">Minions <b>ipsum</b> tank yuuu! Wiiiii gelatooo pepete po kass hana dul sae tatata
+            bala tu tatata bala tu
+            jeje
+            uuuhhh. La bodaaa tank yuuu! La bodaaa daa. Bananaaaa me want bananaaa! Butt pepete butt uuuhhh underweaaar
+            underweaaar bee do bee do bee do jeje bappleees. Pepete baboiii pepete underweaaar. La bodaaa poulet tikka
+            masala jeje ti aamoo! Me want bananaaa! Para tú underweaaar bappleees underweaaar bee do bee do bee do.
+            Baboiii
+          </p>
+          <p class="content-info">Underweaaar potatoooo me want bananaaa! Jeje para tú bappleees
+            chasy bappleees tank yuuu! Para tú. Belloo!
+            me
+            want bananaaa! Uuuhhh pepete butt para tú. Poopayee belloo! Aaaaaah bananaaaa butt bananaaaa bananaaaa
+            belloo!
+            Baboiii aaaaaah. Jeje me want bananaaa! Chasy gelatooo pepete para tú tulaliloo hana dul sae gelatooo.
+            Underweaaar jiji potatoooo me want bananaaa! Po kass la bodaaa bappleees me want bananaaa! Jiji wiiiii.
+            Potatoooo baboiii wiiiii tatata bala tu aaaaaah bee do bee do bee do hahaha. Bananaaaa poulet tikka masala
+            butt
+          </p>
+        </article>
+        <aside class="content-aside">
+          <figure class="content-figure">
+            <img class="content-img" src="images/imgPublicity.png" alt="publicity">
+          </figure>
+        </aside>
+      </section>
+      <section class="form-container">
+        <h2 class="form-title">Mi Formulario</h2>
+        <form action="personalData">
+          <fieldset>
+            <legend class="form-legend">Datos personales</legend>
+            <div class="form-content">
+              <div class="form-item">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input">
+              </div>
+              <div class="form-item">
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname" name="surname" class="form-input">
+              </div>
+              <div class="form-item">
+                <label for="telephone">Teléfono</label>
+                <input type="tel" id="telephone" name="telephone_number" class="form-input">
+              </div>
+            </div>
+            <div class="form-content">
+              <div class="form-item--secondary">
+                <input type="radio" id="dni" name="identityNumber" value="dni" class="form-input">
+                <label class="form-label" for="dni">DNI</label>
+                <input type="radio" id="nie" name="identityNumber" value="nie" class="form-input">
+                <label class="form-label" for="nie">NIE</label>
+              </div>
+              <div class="form-item">
+                <label for="numberIdentity">Nº Documento</label>
+                <input type="number" id="numberIdentity" name="numberIdentity" class="form-input">
+              </div>
+            </div>
+
+          </fieldset>
+          <fieldset class="form-section">
+            <legend class="form-legend">Otros datos</legend>
+            <div class="form-content">
+              <div class="form-item">
+                <label class="form-label" for="numberPerson">Número de hermanos/as</label>
+                <input class="form-input" type="number" id="numberPerson" name="numberIdentity">
+              </div>
+              <div>
+                <p class="form-list-title">Deportes favoritos</p>
+                <ol class="form-list">
+                  <li class="form-element">
+                    <label for="football">Fútbol</label>
+                    <input type="checkbox" id="football" value="football" name="football">
+                  </li>
+                  <li class="form-element">
+                    <label for="basket">Baloncesto</label>
+                    <input type="checkbox" id="basket" value="basket" name="basket">
+                  </li>
+                  <li class="form-element">
+                    <label for="rugby">Rugby</label>
+                    <input type="checkbox" id="rugby" value="rugby" name="rugby">
+                  </li>
+                  <li class="form-element">
+                    <label for="padel">Padel</label>
+                    <input type="checkbox" id="padel" value="padel" name="padel">
+                  </li>
+                  <li class="form-element">
+                    <label for="handball">Pelota vasca</label>
+                    <input type="checkbox" id="handball" value="handball" name="basket">
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form-button">
+            <input type="reset" value="Reset Form" class="btn" />
+            <input type="submit" value="Enviar" class="btn" />
+          </div>
+        </form>
+      </section>
+      <table class="table">
+        <caption class="table-title">Título de nuestra Tabla Molona</caption>
+        <thead>
+          <tr>
+            <th class="table-header">Nombre</th>
+            <th class="table-header">Apellidos</th>
+            <th class="table-header">Teléfono</th>
+            <th class="table-header">DNI/NIE</th>
+            <th class="table-header">Deportes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-content">Carlos</td>
+            <td class="table-content">Casalengua</td>
+            <td class="table-content">987654321</td>
+            <td class="table-content">12345678-A</td>
+            <td class="table-content">Futbol, Padel</td>
+          </tr>
+          <tr>
+            <td class="table-content">Jesús</td>
+            <td class="table-content">Cárdenas</td>
+            <td class="table-content">987654329</td>
+            <td class="table-content">12345678-z</td>
+            <td class="table-content">Rugby, Pelota Vasca</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+</body>
+
+</html>
